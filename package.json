@@ -1,0 +1,56 @@
+{
+  "name": "@viventii/mcp",
+  "version": "3.3.0",
+  "mcpName": "com.viventii/mcp",
+  "description": "Official Model Context Protocol (MCP) server for Viventii — live German & European events, concerts, nightlife, leisure activities, permanent POIs & attractions, 0%-fee tickets, and verified ticket resale.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Viventii UG (haftungsbeschränkt) <support@viventii.com>",
+  "homepage": "https://viventii.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borsty2103/viventii-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/borsty2103/viventii-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "viventii",
+    "events",
+    "germany",
+    "concerts",
+    "nightlife",
+    "poi",
+    "places",
+    "things-to-do",
+    "leisure",
+    "tickets",
+    "ticket-resale",
+    "private-events",
+    "claude",
+    "cursor",
+    "chatgpt"
+  ],
+  "bin": {
+    "viventii-mcp": "./bin/viventii-mcp.mjs",
+    "viventii-organizer-mcp": "./bin/viventii-mcp.mjs"
+  },
+  "files": [
+    "bin/viventii-mcp.mjs",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.24.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

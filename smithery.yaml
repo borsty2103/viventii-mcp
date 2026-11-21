@@ -1,0 +1,27 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      VIVENTII_API_URL:
+        type: string
+        description: Optional Viventii API base URL override (defaults to https://viventii.com)
+        default: https://viventii.com
+      VIVENTII_MCP_MODE:
+        type: string
+        enum: ["public", "organizer"]
+        description: Transport mode — public discovery (no login) or closed organizer automation
+        default: public
+      VIVENTII_API_KEY:
+        type: string
+        description: Optional Organizer API key (only required when VIVENTII_MCP_MODE=organizer)
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['bin/viventii-mcp.mjs'],
+      env: {
+        ...(config.VIVENTII_API_URL ? { VIVENTII_API_URL: config.VIVENTII_API_URL } : {}),
+        ...(config.VIVENTII_MCP_MODE ? { VIVENTII_MCP_MODE: config.VIVENTII_MCP_MODE } : {}),
+        ...(config.VIVENTII_API_KEY ? { VIVENTII_API_KEY: config.VIVENTII_API_KEY } : {})
+      }
+    })

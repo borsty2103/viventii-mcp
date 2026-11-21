@@ -1,0 +1,21 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "borsty2103"
+  ],
+  "homepage": "https://viventii.com",
+  "repository": "https://github.com/borsty2103/viventii-mcp",
+  "license": "MIT",
+  "tags": [
+    "events",
+    "germany",
+    "concerts",
+    "nightlife",
+    "poi",
+    "leisure",
+    "tickets",
+    "ticket-resale",
+    "private-events",
+    "city-guide"
+  ]
+}
