@@ -1,24 +1,14 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "com.viventii/mcp",
-  "title": "Viventii Events, Leisure, POIs & Tickets",
-  "description": "Discover live events, concerts, nightlife, leisure activities, permanent POIs & attractions, 0%-fee tickets, and verified resale availability across Germany & Europe with zero login.",
+  "name": "io.github.borsty2103/viventii-mcp",
+  "title": "Viventii Events, Leisure, POIs, Tickets & Ticket Resale",
+  "description": "German & European events, POIs, leisure, 0%-fee tickets & verified ticket resale on Viventii.",
   "version": "3.3.0",
   "websiteUrl": "https://viventii.com",
   "repository": {
     "url": "https://github.com/borsty2103/viventii-mcp",
     "source": "github"
   },
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "@viventii/mcp",
-      "version": "3.3.0",
-      "transport": {
-        "type": "stdio"
-      }
-    }
-  ],
   "remotes": [
     {
       "type": "streamable-http",

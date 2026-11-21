@@ -1,4 +1,4 @@
-# Viventii MCP Server (`@viventii/mcp`)
+# Viventii MCP Server (`viventii-mcp`)
 
 Official **Model Context Protocol (MCP)** server and CLI bridge for **[Viventii](https://viventii.com)** — Germany & Europe's privacy-first platform for **live events, concerts, nightlife, leisure activities, permanent POIs & attractions, 0%-fee ticketing, verified ticket resale marketplace, and GDPR-compliant private events**.
 
@@ -34,16 +34,16 @@ https://viventii.com/api/mcp
 - **OpenAPI Spec:** `https://viventii.com/api/mcp/openapi.json`
 - **LLMs.txt:** `https://viventii.com/llms.txt` & `https://viventii.com/llms-full.txt`
 
-### Option 2: Local STDIO via `npx` (Claude Desktop, Cursor, Windsurf, Codex)
+### Option 2: Local STDIO via GitHub + `npx` (Claude Desktop, Cursor, Windsurf, Codex)
 
-Add to your `claude_desktop_config.json` or `.cursor/mcp.json`:
+No npm account or manual install required — runs directly from GitHub:
 
 ```json
 {
   "mcpServers": {
     "viventii": {
       "command": "npx",
-      "args": ["-y", "@viventii/mcp"]
+      "args": ["-y", "github:borsty2103/viventii-mcp"]
     }
   }
 }
@@ -83,7 +83,7 @@ Verified Viventii B2B organizers can automate event creation, AI flyer extractio
   "mcpServers": {
     "viventii-organizer": {
       "command": "npx",
-      "args": ["-y", "@viventii/mcp", "--organizer"],
+      "args": ["-y", "github:borsty2103/viventii-mcp", "--organizer"],
       "env": {
         "VIVENTII_API_KEY": "sk_live_your_api_key"
       }

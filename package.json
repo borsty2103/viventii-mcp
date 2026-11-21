@@ -1,7 +1,7 @@
 {
-  "name": "@viventii/mcp",
+  "name": "viventii-mcp",
   "version": "3.3.0",
-  "mcpName": "com.viventii/mcp",
+  "mcpName": "io.github.borsty2103/viventii-mcp",
   "description": "Official Model Context Protocol (MCP) server for Viventii — live German & European events, concerts, nightlife, leisure activities, permanent POIs & attractions, 0%-fee tickets, and verified ticket resale.",
   "type": "module",
   "license": "MIT",
